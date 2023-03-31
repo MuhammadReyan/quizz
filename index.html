@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--  BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/86637637cc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="preloader">
+
+    </div>
+    <div class="container-fluid  image">
+
+        <div class="container con">
+            <div class="formm container hey ">
+                <h3 class="text-center quiz">Quiz Form </h3>
+                <label for="name">Name :</label>
+                <input type="text" placeholder="Enter Your Name" required size="40" id="name" name="name">
+                <br>
+                <label for="email">Email Address :</label>
+                <br>
+                <input type="email" placeholder="Enter Your Email Address" required size="40" id="email" name="email">
+                <br>
+                <label for="password">Password :</label>
+                <br>
+                <input type="password" placeholder="Enter Your Password" required size="40" id="password"
+                    name="password">
+                <br>
+                <!-- rules -->
+
+
+                <button class="rules" onclick="openPopup()">Information</button>
+                <div class="popup " id="popup">
+                    <img src="/assets/Check-Mark-Tick-PNG-Isolated-Transparent-HD-Photo.png" alt="" width="100px">
+                    <h2>Thank You</h2>
+
+                    <p>After filling the information, you will have a quiz test, no calculator and other material, if
+                        someone brings something, it will be released.</p>
+
+                    <button class="btnoo1" id="close" onclick="closePopup()">OK</button>
+
+
+                </div>
+                <!-- rules end -->
+
+                <button class="subm" onclick="valid()">Submit</button>
+            </div>
+        </div>
+
+        <div class="mainn container hide">
+            <div class="boxx container  ">
+                <h2 id="quesBox">the head is the head</h2>
+
+                <div class="roww">
+                    <input class="options" type="radio" id="option1" value="a" name="option" />
+                    <label for="option1">option </label>
+                </div>
+                <div class="roww">
+                    <input class="options" type="radio" id="option1" value="b" name="option" />
+                    <label for="option1">option </label>
+                </div>
+                <div class="roww">
+                    <input class="options" type="radio" id="option1" value="c" name="option" />
+                    <label for="option1">option </label>
+                </div>
+                <div class="roww">
+                    <input class="options" type="radio" id="option1" value="d" name="option" />
+                    <label for="option1">option </label>
+                </div>
+
+                <button class="btn" onclick="submitQuiz()">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- APP JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
