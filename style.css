@@ -5,7 +5,7 @@
 }
 
 #preloader {
-    background: black url('/assets/f59876d316abc628202df9012706d68f.gif') no-repeat center center;
+    background: black url('assets/f59876d316abc628202df9012706d68f.gif') no-repeat center center;
     background-size: 25%;
     position: fixed;
     height: 100vh;
